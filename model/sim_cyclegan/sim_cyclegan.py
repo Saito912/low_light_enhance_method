@@ -1,4 +1,3 @@
-import torch
 from torch import nn
 """
 源仓库地址：https://github.com/Chenzhaowei13/Light-Condition-Style-Transfer
@@ -82,6 +81,6 @@ class SIM_CycleGAN(nn.Module):
 
     def forward(self, input):
         output = self.model(input)
-        return  output
+        return output
 
 
