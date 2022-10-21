@@ -79,8 +79,11 @@ class SIM_CycleGAN(nn.Module):
 
         self.model = nn.Sequential(*model)
 
-    def forward(self, input):
-        output = self.model(input)
+    def forward(self, inputs):
+        output = self.model(inputs)
         return output
+
+    def run(self,inputs):
+        return self(inputs)
 
 
