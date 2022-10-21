@@ -100,6 +100,7 @@ class SNR:
         type_ckpt = ['indoor_G.pth','LOLv1.pth','LOLv2_real.pth','LOLv2_synthetic.pth','outdoor_G.pth','SID.pth','SMID.pth']
         assert mode < len(type_ckpt), f'mode must less than len(type_ckpt)={len(type_ckpt)}, current mode is {mode}'
         ckpt_path = os.path.join(current_path,'weights',type_ckpt[mode])
+        print('load ckpt from '+ckpt_path)
         self.model.load_state_dict(torch.load(ckpt_path,map_location='cuda'))
 
         self.model.eval()
