@@ -81,12 +81,9 @@ class SIM_CycleGAN(nn.Module):
         self.model = nn.Sequential(*model)
         self.eval()
 
+    @torch.no_grad()
     def forward(self, inputs):
         output = self.model(inputs)
         return output
-
-    @torch.no_grad()
-    def run(self,inputs):
-        return self(inputs)
 
 

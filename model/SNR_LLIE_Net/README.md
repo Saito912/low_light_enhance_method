@@ -27,7 +27,7 @@ img = cv2.imread('demo/inputs/img1.png')
 im_shape = (img.shape[1]//16*16, img.shape[0]//16*16)
 img = cv2.resize(img, im_shape)
 model = SNR(6)
-out = model.run(img)
+out = model(img)
 cv2.imwrite('tmp.jpg',out)
 ```
 

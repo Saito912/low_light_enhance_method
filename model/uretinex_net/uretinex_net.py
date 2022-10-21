@@ -1,4 +1,6 @@
 import argparse
+
+import torch
 import torch.nn as nn
 from .network.Math_Module import P, Q
 from .network.decom import Decom
@@ -70,7 +72,8 @@ class URetinex_Net:
         self.model = _URetinex_Net().cuda()
         self.model.eval()
 
-    def run(self, low_img: np.array):
+    @torch.no_grad()
+    def __call__(self, low_img: np.array):
         low_img = (torch.from_numpy(cv2.cvtColor(low_img,
                                                  cv2.COLOR_BGR2RGB).transpose((2, 0, 1))) / 255.).unsqueeze(0).cuda()
         enhance = self.model(input_low_img=low_img)

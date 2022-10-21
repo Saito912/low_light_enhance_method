@@ -106,7 +106,7 @@ class SNR:
         self.model.eval()
 
     @torch.no_grad()
-    def run(self,low_img:np.array):
+    def __call__(self,low_img:np.array):
         low_img = cv2.cvtColor(low_img, cv2.COLOR_BGR2RGB)
         img_nf = low_img.astype(np.float32)
         img_nf = cv2.blur(img_nf, (5, 5))

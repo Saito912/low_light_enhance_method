@@ -19,7 +19,7 @@ class SCI:
         self.model.eval()
 
     @torch.no_grad()
-    def run(self,low_img):
+    def __call__(self,low_img):
         low_img = (torch.from_numpy(cv2.cvtColor(low_img,
                                                  cv2.COLOR_BGR2RGB).transpose((2, 0, 1))) / 255.).unsqueeze(0).cuda()
         i, enhance = self.model(low_img)
