@@ -7,7 +7,9 @@ import torch.utils
 
 from .model import Finetunemodel
 
-
+"""
+原始仓库地址: https://github.com/vis-opt-group/SCI
+"""
 class SCI:
     def __init__(self):
         current_work_dir = os.path.dirname(__file__)

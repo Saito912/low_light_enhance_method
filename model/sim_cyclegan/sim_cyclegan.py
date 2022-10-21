@@ -1,3 +1,4 @@
+import torch
 from torch import nn
 """
 源仓库地址：https://github.com/Chenzhaowei13/Light-Condition-Style-Transfer
@@ -78,11 +79,13 @@ class SIM_CycleGAN(nn.Module):
         model += [nn.Tanh()]
 
         self.model = nn.Sequential(*model)
+        self.eval()
 
     def forward(self, inputs):
         output = self.model(inputs)
         return output
 
+    @torch.no_grad()
     def run(self,inputs):
         return self(inputs)
 

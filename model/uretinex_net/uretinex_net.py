@@ -8,6 +8,9 @@ import cv2
 import numpy as np
 import os
 
+"""
+原始仓库地址: https://github.com/AndersonYong/URetinex-Net/
+"""
 
 def one2three(x):
     return torch.cat([x, x, x], dim=1).to(x)
