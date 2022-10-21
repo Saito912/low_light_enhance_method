@@ -106,12 +106,12 @@ class SNR:
 
     @torch.no_grad()
     def run(self,low_img:np.array):
+        low_img = cv2.cvtColor(low_img, cv2.COLOR_BGR2RGB)
         img_nf = low_img.astype(np.float32)
         img_nf = cv2.blur(img_nf, (5, 5))
-        img_nf = img_nf * 1.0 / 255.0
+        img_nf = img_nf / 255.0
         img_nf = torch.Tensor(img_nf).float().permute(2, 0, 1).unsqueeze(0).cuda()
-        low_img = (torch.from_numpy(cv2.cvtColor(low_img,
-                                                 cv2.COLOR_BGR2RGB).transpose((2, 0, 1))) / 255.).unsqueeze(0).cuda()
+        low_img = (torch.from_numpy(low_img.transpose((2, 0, 1))) / 255.).unsqueeze(0).cuda()
 
         dark = low_img
         dark = dark[:, 0:1, :, :] * 0.299 + dark[:, 1:2, :, :] * 0.587 + dark[:, 2:3, :, :] * 0.114
