@@ -1,3 +1,3 @@
-from .low_light_transformer import SNR
+from .predict import SNR
 
 __all__=['SNR']

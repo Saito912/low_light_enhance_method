@@ -14,16 +14,14 @@ cv2.imwrite('tmp.jpg',out)
 
 ### 结果对比
  <div class="half" style="text-align: center;">
-   <img src="../../demo/inputs/img1.png" width="400"/> <img src="../../demo/outputs/SCI/img1.png" width="400"/>
+   <img src="../../demo/inputs/bicycle.jpg" width="400"/> <img src="../../demo/outputs/SCI/bicycle.jpg" width="400"/>
 </div>
  <div class="half" style="text-align: center;">
-   <img src="../../demo/inputs/img2.png" width="400"/> <img src="../../demo/outputs/SCI/img2.png" width="400"/>
+   <img src="../../demo/inputs/cat.jpg" width="400"/> <img src="../../demo/outputs/SCI/cat.jpg" width="400"/>
 </div>
  <div class="half" style="text-align: center;">
-   <img src="../../demo/inputs/img4.png" width="400"/> <img src="../../demo/outputs/SCI/img4.png" width="400"/>
+   <img src="../../demo/inputs/dog.jpg" width="400"/> <img src="../../demo/outputs/SCI/dog.jpg" width="400"/>
 </div>
-
-
 
 
 

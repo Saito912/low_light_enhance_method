@@ -1,4 +1,4 @@
-### 运行方法：在根目录创建python脚本，复制以下代码即可运行
+### 运行方法：复制以下代码到main.py即可运行
 ```angular2html
 from model import RUAS
 import cv2
@@ -14,14 +14,15 @@ cv2.imwrite('tmp.jpg',out)
 
 ### 结果对比
  <div class="half" style="text-align: center;">
-   <img src="../../demo/inputs/img1.png" width="400"/> <img src="../../demo/outputs/RUAS/img1.png" width="400"/>
+   <img src="../../demo/inputs/bicycle.jpg" width="400"/> <img src="../../demo/outputs/RUAS/bicycle.jpg" width="400"/>
 </div>
  <div class="half" style="text-align: center;">
-   <img src="../../demo/inputs/img2.png" width="400"/> <img src="../../demo/outputs/RUAS/img2.png" width="400"/>
+   <img src="../../demo/inputs/cat.jpg" width="400"/> <img src="../../demo/outputs/RUAS/cat.jpg" width="400"/>
 </div>
  <div class="half" style="text-align: center;">
-   <img src="../../demo/inputs/img4.png" width="400"/> <img src="../../demo/outputs/RUAS/img4.png" width="400"/>
+   <img src="../../demo/inputs/dog.jpg" width="400"/> <img src="../../demo/outputs/RUAS/dog.jpg" width="400"/>
 </div>
+
 
 
 

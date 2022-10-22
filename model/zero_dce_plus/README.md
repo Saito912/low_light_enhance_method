@@ -4,7 +4,7 @@ from model import RUAS
 import cv2
 import os
 
-img = cv2.imread('demo/inputs/img1.png')
+img = cv2.imread('demo/inputs/img1.jpg')
 im_shape = (img.shape[1]//16*16, img.shape[0]//16*16)
 img = cv2.resize(img, im_shape)
 model = ZeroDceP()
@@ -14,13 +14,13 @@ cv2.imwrite('tmp.jpg',out)
 
 ### 结果对比
  <div class="half" style="text-align: center;">
-   <img src="../../demo/inputs/img1.png" width="400"/> <img src="../../demo/outputs/ZeroDceP/img1.png" width="400"/>
+   <img src="../../demo/inputs/bicycle.jpg" width="400"/> <img src="../../demo/outputs/ZeroDceP/bicycle.jpg" width="400"/>
 </div>
  <div class="half" style="text-align: center;">
-   <img src="../../demo/inputs/img2.png" width="400"/> <img src="../../demo/outputs/ZeroDceP/img2.png" width="400"/>
+   <img src="../../demo/inputs/cat.jpg" width="400"/> <img src="../../demo/outputs/ZeroDceP/cat.jpg" width="400"/>
 </div>
  <div class="half" style="text-align: center;">
-   <img src="../../demo/inputs/img4.png" width="400"/> <img src="../../demo/outputs/ZeroDceP/img4.png" width="400"/>
+   <img src="../../demo/inputs/dog.jpg" width="400"/> <img src="../../demo/outputs/ZeroDceP/dog.jpg" width="400"/>
 </div>
 
 

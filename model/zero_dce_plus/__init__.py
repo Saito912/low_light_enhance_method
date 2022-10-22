@@ -1,3 +1,3 @@
-from .zero_dce_plus import ZeroDceP
+from .predict import ZeroDceP
 
 __all__=['ZeroDceP']

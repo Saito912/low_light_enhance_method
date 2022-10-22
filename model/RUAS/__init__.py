@@ -1,2 +1,2 @@
-from .ruas import RUAS
+from .predict import RUAS
 __all__=['RUAS']
