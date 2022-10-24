@@ -1,4 +1,4 @@
-from model import *
+from enhance_model import *
 import cv2
 import os
 
