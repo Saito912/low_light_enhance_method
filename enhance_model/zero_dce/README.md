@@ -18,20 +18,6 @@ Code: https://github.com/Li-Chongyi/Zero-DCE
 公式2是作为训练过程中的损失之一，M是不重叠的局部区域的数量，Y是增强图像中局部区域的平均强度值(可以简单的理解为亮度)，E为预期“亮度”的平均值，即需要网络最终输出的图片的亮度的期望值为E。
 
 
-### 运行方法：复制以下代码到main.py即可运行
-```angular2html
-from model import ZeroDCE
-import cv2
-import os
-
-img = cv2.imread('demo/inputs/cat.jpg)
-im_shape = (img.shape[1]//16*16, img.shape[0]//16*16)
-img = cv2.resize(img, im_shape)
-model = ZeroDCE()
-out = model(img)
-cv2.imwrite('tmp.jpg',out)
-```
-
 ### 结果对比
  <div class="half" style="text-align: center;">
    <img src="../../demo/inputs/bicycle.jpg" width="400"/> <img src="../../demo/outputs/ZeroDCE/bicycle.jpg" width="400"/>
