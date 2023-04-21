@@ -10,7 +10,7 @@ Code: https://github.com/VITA-Group/EnlightenGAN
 </div>
 
 ### Get Start
-EnlightenGAN.pth: 链接：[baidu](https://pan.baidu.com/s/16I-Gj3QWu9sTay_2Dvb4rg?pwd=k5tg ), 提取码：k5tg
+EnlightenGAN.pth: 链接：[baidu](https://pan.baidu.com/s/12VoCwEYg_l-BJExppk9tDw?pwd=u5p8 ), 提取码：u5p8
 
 下载EnlightenGAN.pth, 放置到model/EnlightenGAN/目录中
 ```
